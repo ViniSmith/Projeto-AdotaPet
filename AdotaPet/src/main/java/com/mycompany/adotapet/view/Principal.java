@@ -26,23 +26,152 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        Cadastro = new javax.swing.JMenu();
+        Usuário = new javax.swing.JMenuItem();
+        Animal = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        Sair = new javax.swing.JMenuItem();
+        Operações = new javax.swing.JMenu();
+        adocao = new javax.swing.JMenuItem();
+        registrarEvento = new javax.swing.JMenuItem();
+        devolucao = new javax.swing.JMenuItem();
+        Relatórios = new javax.swing.JMenu();
+        adocoes = new javax.swing.JMenu();
+        semanal = new javax.swing.JMenuItem();
+        mensal = new javax.swing.JMenuItem();
+        geral = new javax.swing.JMenuItem();
+        acompanhamento = new javax.swing.JMenuItem();
+        animais = new javax.swing.JMenuItem();
+        Ajuda = new javax.swing.JMenu();
+        suporte = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        sair = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("Trocar foto");
+        jPopupMenu1.add(jMenuItem1);
+        jPopupMenu1.add(jSeparator1);
+
+        jMenuItem2.setText("Sair");
+        jPopupMenu1.add(jMenuItem2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("AdotaPet - Sistema de Adoção");
 
         jPanel1.setBackground(new java.awt.Color(255, 236, 29));
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
+        jLabel1.setComponentPopupMenu(jPopupMenu1);
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 282, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
         );
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel2.setText("Sistema Adota Pet, versão 1.0 - Desenvolvido por mim mesmo");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel3.setText("Usuário: Zezin");
+
+        Cadastro.setText("Cadastro");
+
+        Usuário.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
+        Usuário.setText("Usuário");
+        Cadastro.add(Usuário);
+
+        Animal.setText("Animal");
+        Cadastro.add(Animal);
+        Cadastro.add(jSeparator2);
+
+        Sair.setText("Sair");
+        Cadastro.add(Sair);
+
+        jMenuBar1.add(Cadastro);
+
+        Operações.setText("Operações");
+
+        adocao.setText("Adoção");
+        Operações.add(adocao);
+
+        registrarEvento.setText("Registrar Evento");
+        Operações.add(registrarEvento);
+
+        devolucao.setText("Devolução");
+        Operações.add(devolucao);
+
+        jMenuBar1.add(Operações);
+
+        Relatórios.setText("Relatórios");
+
+        adocoes.setText("Adoções");
+
+        semanal.setText("Semanal");
+        adocoes.add(semanal);
+
+        mensal.setText("Mensal");
+        adocoes.add(mensal);
+
+        geral.setText("Geral");
+        adocoes.add(geral);
+
+        Relatórios.add(adocoes);
+
+        acompanhamento.setText("Acompanhamento");
+        Relatórios.add(acompanhamento);
+
+        animais.setText("Animais");
+        Relatórios.add(animais);
+
+        jMenuBar1.add(Relatórios);
+
+        Ajuda.setText("Ajuda");
+
+        suporte.setText("Suporte");
+        Ajuda.add(suporte);
+        Ajuda.add(jSeparator3);
+
+        sair.setText("Sair");
+        Ajuda.add(sair);
+
+        jMenuBar1.add(Ajuda);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -50,11 +179,19 @@ public class Principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 473, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -96,6 +233,35 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Ajuda;
+    private javax.swing.JMenuItem Animal;
+    private javax.swing.JMenu Cadastro;
+    private javax.swing.JMenu Operações;
+    private javax.swing.JMenu Relatórios;
+    private javax.swing.JMenuItem Sair;
+    private javax.swing.JMenuItem Usuário;
+    private javax.swing.JMenuItem acompanhamento;
+    private javax.swing.JMenuItem adocao;
+    private javax.swing.JMenu adocoes;
+    private javax.swing.JMenuItem animais;
+    private javax.swing.JMenuItem devolucao;
+    private javax.swing.JMenuItem geral;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JMenuItem mensal;
+    private javax.swing.JMenuItem registrarEvento;
+    private javax.swing.JMenuItem sair;
+    private javax.swing.JMenuItem semanal;
+    private javax.swing.JMenuItem suporte;
     // End of variables declaration//GEN-END:variables
 }
