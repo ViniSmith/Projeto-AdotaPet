@@ -66,6 +66,11 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("AdotaPet - Sistema de Adoção");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(255, 236, 29));
 
@@ -115,10 +120,12 @@ public class Principal extends javax.swing.JFrame {
         Usuário.setText("Usuário");
         Cadastro.add(Usuário);
 
+        Animal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/animal.png"))); // NOI18N
         Animal.setText("Animal");
         Cadastro.add(Animal);
         Cadastro.add(jSeparator2);
 
+        Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/exit.png"))); // NOI18N
         Sair.setText("Sair");
         Cadastro.add(Sair);
 
@@ -195,7 +202,15 @@ public class Principal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        LoginView login = new LoginView(this, true);
+        login.setVisible(true);
+        
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
