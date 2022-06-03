@@ -8,6 +8,7 @@ package com.mycompany.adotapet.model.pets;
  *
  * @author Esperanza TUNADO
  */
-public class Gato {
-    
+public class Gato extends Animal{
+    private String cor;
+    private boolean domesticado;
 }

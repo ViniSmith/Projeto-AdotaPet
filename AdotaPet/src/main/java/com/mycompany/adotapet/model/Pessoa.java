@@ -13,6 +13,7 @@ import java.time.LocalDate;
  * @author Esperanza TUNADO
  */
 public class Pessoa {
+    private int id;
     private String nome, email;
     private LocalDate dataNascimento;
     

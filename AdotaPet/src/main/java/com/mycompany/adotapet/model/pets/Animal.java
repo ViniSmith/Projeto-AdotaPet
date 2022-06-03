@@ -12,7 +12,8 @@ import java.time.LocalDate;
  * @author Esperanza TUNADO
  */
 public class Animal {
-    private String nome;
+    private int id;
+    private String nome, raca;
     private LocalDate dataNascimento;
     private ESexo sexo;
 }
