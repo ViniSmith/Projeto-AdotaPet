@@ -4,6 +4,7 @@
  */
 package com.mycompany.adotapet.view;
 
+import com.mycompany.adotapet.service.LoginService;
 import javax.swing.JOptionPane;
 
 /**
@@ -109,7 +110,9 @@ public class LoginView extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jtfLogin.getText().equals("admin") && jpfSenha.getText().equals("123")) {
+        //if(jtfLogin.getText().equals("admin") && jpfSenha.getText().equals("123")) {
+        if(LoginService.PodeLogar(jtfLogin.getText(), jpfSenha.getText())) {
+
             setVisible(false);
         }else {
             jtfLogin.setText("");
@@ -119,8 +122,10 @@ public class LoginView extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    
+    
     private void jpfSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jpfSenhaActionPerformed
-        // TODO add your handling code here:
+        // TODO ayourdasd handling co here:
     }//GEN-LAST:event_jpfSenhaActionPerformed
 
     /**
